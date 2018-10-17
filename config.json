@@ -7,10 +7,10 @@
     "coinDecimalPlaces": 4,
     "coinDifficultyTarget": 120,
 
-    "daemonType": "forknote",
+    "daemonType": "default",
     "cnAlgorithm": "cryptonight",
     "cnVariant": 0,
-    "cnBlobType": 0,
+    "cnBlobType": 2,
 
     "logging": {
         "files": {
@@ -29,7 +29,7 @@
         "clusterForks": "auto",
         "poolAddress": "",
         "intAddressPrefix": null,
-        "blockRefreshInterval": 1000,
+        "blockRefreshInterval": 1500,
         "minerTimeout": 900,
         "sslCert": "./cert.pem",
         "sslKey": "./privkey.pem",
@@ -37,17 +37,17 @@
         "ports": [
             {
                 "port": 3333,
-                "difficulty": 5000,
+                "difficulty": 1000,
                 "desc": "Low end hardware"
             },
             {
                 "port": 4444,
-                "difficulty": 15000,
+                "difficulty": 10000,
                 "desc": "Mid range hardware"
             },
             {
                 "port": 5555,
-                "difficulty": 25000,
+                "difficulty": 100000,
                 "desc": "High end hardware"
             },
             {
@@ -65,11 +65,11 @@
                 "port": 9999,
                 "difficulty": 20000,
                 "desc": "SSL connection",
-                "ssl": true
+                "ssl": false
             }
         ],
         "varDiff": {
-            "minDiff": 100,
+            "minDiff": 1,
             "maxDiff": 100000000,
             "targetTime": 60,
             "retargetTime": 30,
@@ -113,10 +113,10 @@
         "transferFee": 1000000000,
         "dynamicTransferFee": true,
         "minerPayFee" : true,
-        "minPayment": 1000000000,
+        "minPayment": 10000000000,
         "maxPayment": null,
         "maxTransactionAmount": 0,
-        "denomination": 100000000000
+        "denomination": 1000000000000
     },
 
     "blockUnlocker": {
@@ -136,7 +136,7 @@
         "port": 8117,
         "blocks": 30,
         "payments": 30,
-        "password": "",
+        "password": "XXXXXXXXXXXXXX",
         "ssl": false,
         "sslPort": 8119,
         "sslCert": "./cert.pem",
